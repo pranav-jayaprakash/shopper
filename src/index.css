@@ -14,3 +14,8 @@ code {
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+}
