@@ -26,11 +26,11 @@ function Maintwo() {
   return (
     <div>
 
-<MDBRow className='row-cols-1 row-cols-md-3 g-4'>
+<MDBRow className='row-cols-1 row-cols-md-6 g-4'>
 {first.map((display)=>
 <MDBCol>
-<MDBCard alignment='left' className='h-100'>
-      <MDBCardImage src={display.images[0]} className='img-fluid rounded' position='top' alt='...' />
+<MDBCard  className='h-100'>
+      <MDBCardImage src={display.images[0]}  position='top' alt='...' />
       <MDBCardBody>
         <MDBCardTitle>{display.title}</MDBCardTitle>
         <MDBCardText>
@@ -39,7 +39,7 @@ function Maintwo() {
         <MDBCardText>$
           {display.price}
         </MDBCardText>
-        <MDBBtn href='#'>ADD TO CART</MDBBtn>
+        <MDBBtn href='#' color='warning'>ADD TO CART</MDBBtn>
       </MDBCardBody>
     </MDBCard>
 </MDBCol>
