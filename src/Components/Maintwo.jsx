@@ -29,9 +29,9 @@ function Maintwo({ handleClick }) {
       <MDBRow className="row-cols-1 row-cols-md-5 g-4">
         {first.map((display) => (
           <MDBCol>
-            <MDBCard className="h-100">
+            <MDBCard className="h-100" >
               <MDBCardImage src={display.images[0]} position="top" alt="..." />
-              <MDBCardBody>
+              <MDBCardBody >
                 <MDBCardTitle>{display.title}</MDBCardTitle>
                 <MDBCardText>{display.brand}</MDBCardText>
                 <MDBCardText>${display.price}</MDBCardText>
