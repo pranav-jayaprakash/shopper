@@ -15,7 +15,7 @@ import './Mainall.css'
 
 import axios from 'axios';
 
-function Maintwo() {
+function Maintwo({handleClick}) {
 
     const [first, setfirst] = useState([])
 
@@ -40,7 +40,7 @@ function Maintwo() {
         <MDBCardText>$
           {display.price}
         </MDBCardText>
-        <MDBBtn href='#' color='warning'>ADD TO CART</MDBBtn>
+        <MDBBtn color='warning' onClick={()=>handleClick(display)}>ADD TO CART</MDBBtn>
       </MDBCardBody>
     </MDBCard>
 </MDBCol>

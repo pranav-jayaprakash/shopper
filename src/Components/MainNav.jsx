@@ -1,7 +1,7 @@
 import React from "react";
 import "./Mainall.css";
 
-function MainNav() {
+function MainNav({size}) {
   return (
     <div>
 
@@ -13,6 +13,7 @@ function MainNav() {
         <span>
         <i className="fa fa-cart-plus"></i>
         </span>
+        <span>{size}</span>
       </div>
       </nav>
     </div>

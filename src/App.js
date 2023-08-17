@@ -5,11 +5,17 @@ import Maintwo from './Components/Maintwo';
 
 function App() {
 
+  const [show, setshow] = useState(true);
+  const [cart, setcart] = useState([]);
+
+  const handleClick =(item)=>{
+    console.log(item);
+  }
   
   return (
     <div className="App">
-      <MainNav/>
-      <Maintwo/>
+      <MainNav size={cart.length}/>
+      <Maintwo handleClick={handleClick}/>
       
     </div>
   );
