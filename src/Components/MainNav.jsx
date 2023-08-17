@@ -1,15 +1,20 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import "./Mainall.css";
 
 function MainNav() {
   return (
     <div>
-      
+
+      <nav>
+      <div className="nav_box">
+        <span className="my_shop"><img src="https://seeklogo.com/images/S/shopee-logo-065D1ADCB9-seeklogo.com.png" alt="" className="sizer"/></span>
+      </div>
+      <div className="cart">
+        <span>
+        <i className="fa fa-cart-plus"></i>
+        </span>
+      </div>
+      </nav>
     </div>
   );
 }

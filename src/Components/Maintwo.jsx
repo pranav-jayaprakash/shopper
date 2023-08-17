@@ -11,6 +11,7 @@ import {
     MDBRow,
     MDBCol
   } from 'mdb-react-ui-kit';
+import './Mainall.css'
 
 import axios from 'axios';
 
@@ -24,9 +25,9 @@ function Maintwo() {
     }, [])
 
   return (
-    <div>
+    <div className='border'>
 
-<MDBRow className='row-cols-1 row-cols-md-6 g-4'>
+<MDBRow className='row-cols-1 row-cols-md-5 g-4'>
 {first.map((display)=>
 <MDBCol>
 <MDBCard  className='h-100'>
