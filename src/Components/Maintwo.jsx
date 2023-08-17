@@ -29,8 +29,8 @@ function Maintwo() {
 <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
 {first.map((display)=>
 <MDBCol>
-<MDBCard alignment='center' className='h-100'>
-      <MDBCardImage src={display.images[0]} position='top' alt='...' />
+<MDBCard alignment='left' className='h-100'>
+      <MDBCardImage src={display.images[0]} className='img-fluid rounded' position='top' alt='...' />
       <MDBCardBody>
         <MDBCardTitle>{display.title}</MDBCardTitle>
         <MDBCardText>
