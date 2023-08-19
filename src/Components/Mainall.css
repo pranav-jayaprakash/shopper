@@ -126,3 +126,17 @@ article {
 
 }
 
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_box div:nth-child(3) span {
+    background-color: aqua;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.total
