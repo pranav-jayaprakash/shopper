@@ -36,9 +36,12 @@ function App() {
   
   return (
     <div className="App">
-      <MainNav size={cart.length}/>
-      <Maintwo handleClick={handleClick} />
-      <Maincart cart={cart} setcart={setcart}/>
+      <MainNav size={cart.length} setshow={setshow}/>
+      {
+        show? <Maintwo handleClick={handleClick} />:<Maincart cart={cart} setcart={setcart}/>
+      }
+      
+      
 
       {
         warning && <div className='warning'>Item is already in your cart!</div>
