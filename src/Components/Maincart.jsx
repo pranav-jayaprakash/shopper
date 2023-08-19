@@ -4,11 +4,11 @@ import "./Mainall.css";
 function Maincart({ cart, setcart }) {
   const [price, setprice] = useState(0);
   return (
-    <div>
+    <article>
       {cart?.map((item) => (
         <div className="cart_box" key={item.id}>
             <div className="cart_img">
-                <img src={item.image[0]} alt="" />
+                <img src={item.images[0]} alt="" />
                 <p>{item.title}</p>
             </div>
             <div>
@@ -26,7 +26,7 @@ function Maincart({ cart, setcart }) {
         <span>Total Price of your cart</span>
         <span>in Dollars = {price}</span>
       </div>
-    </div>
+    </article>
   );
 }
 
